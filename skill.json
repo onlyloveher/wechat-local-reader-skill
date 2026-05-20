@@ -1,13 +1,30 @@
 {
   "name": "wechat-local-reader",
-  "description": "Read WeChat Official Account articles locally via Chrome/Edge CDP and save them as Markdown.",
+  "description": "Turn a WeChat Official Account article link into a local Markdown document that agents can summarize, analyze, archive, or use for downstream tasks.",
+  "value_proposition": "Drop a mp.weixin.qq.com article link into Codex, Hermes, OpenClaw, or another agent; the skill reads it locally through Chrome/Edge CDP and saves clean article content as Markdown.",
   "version": "0.1.0",
   "runtimes": ["codex", "openclaw", "hermes"],
   "entry": "scripts/read-wechat-article.mjs",
+  "inputs": {
+    "url": "WeChat Official Account article URL from mp.weixin.qq.com"
+  },
   "outputs": {
-    "stdout": "JSON status",
+    "stdout": "JSON status including ok, outputPath, title, author, published, and chars",
     "file": "Markdown article at outputPath"
   },
+  "keywords": [
+    "wechat",
+    "weixin",
+    "mp.weixin.qq.com",
+    "official account",
+    "article extraction",
+    "markdown",
+    "local-first",
+    "codex",
+    "hermes",
+    "openclaw",
+    "dingtalk workflow"
+  ],
   "author": {
     "wechat": "190569625"
   }
