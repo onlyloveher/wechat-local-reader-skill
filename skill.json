@@ -1,0 +1,14 @@
+{
+  "name": "wechat-local-reader",
+  "description": "Read WeChat Official Account articles locally via Chrome/Edge CDP and save them as Markdown.",
+  "version": "0.1.0",
+  "runtimes": ["codex", "openclaw", "hermes"],
+  "entry": "scripts/read-wechat-article.mjs",
+  "outputs": {
+    "stdout": "JSON status",
+    "file": "Markdown article at outputPath"
+  },
+  "author": {
+    "wechat": "190569625"
+  }
+}
