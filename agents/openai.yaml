@@ -1,0 +1,4 @@
+interface:
+  display_name: "WeChat Local Reader"
+  short_description: "Read WeChat Official Account articles locally via Chrome or Edge and save them as Markdown."
+  default_prompt: "Use $wechat-local-reader to read a WeChat Official Account article locally and summarize the saved Markdown."
